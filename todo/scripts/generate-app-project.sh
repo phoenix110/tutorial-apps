@@ -7,7 +7,7 @@
 # mybatis single, mybatis multi, jpa single, jpa multi
 # mybatis app single
 mvn archetype:generate -B \
- -DarchetypeCatalog=http://repo.terasoluna.org/nexus/content/repositories/terasoluna-gfw-releases \
+ -DarchetypeCatalog=http://repo.terasoluna.org/nexus/content/repositories/terasoluna-gfw-snapshots \
  -DarchetypeGroupId=org.terasoluna.gfw.blank \
  -DarchetypeArtifactId=terasoluna-gfw-web-blank-mybatis3-archetype \
  -DarchetypeVersion=${ARCHETYPE_VERSION} \
@@ -17,7 +17,7 @@ mvn archetype:generate -B \
 
 # mybatis app multi
 mvn archetype:generate -B \
- -DarchetypeCatalog=http://repo.terasoluna.org/nexus/content/repositories/terasoluna-gfw-releases \
+ -DarchetypeCatalog=http://repo.terasoluna.org/nexus/content/repositories/terasoluna-gfw-snapshots \
  -DarchetypeGroupId=org.terasoluna.gfw.blank \
  -DarchetypeArtifactId=terasoluna-gfw-multi-web-blank-mybatis3-archetype \
  -DarchetypeVersion=${ARCHETYPE_VERSION} \
@@ -27,7 +27,7 @@ mvn archetype:generate -B \
 
 # jpa app single
 mvn archetype:generate -B \
- -DarchetypeCatalog=http://repo.terasoluna.org/nexus/content/repositories/terasoluna-gfw-releases \
+ -DarchetypeCatalog=http://repo.terasoluna.org/nexus/content/repositories/terasoluna-gfw-snapshots \
  -DarchetypeGroupId=org.terasoluna.gfw.blank \
  -DarchetypeArtifactId=terasoluna-gfw-web-blank-jpa-archetype \
  -DarchetypeVersion=${ARCHETYPE_VERSION} \
@@ -37,7 +37,7 @@ mvn archetype:generate -B \
 
 # jpa multi single
 mvn archetype:generate -B \
- -DarchetypeCatalog=http://repo.terasoluna.org/nexus/content/repositories/terasoluna-gfw-releases \
+ -DarchetypeCatalog=http://repo.terasoluna.org/nexus/content/repositories/terasoluna-gfw-snapshots \
  -DarchetypeGroupId=org.terasoluna.gfw.blank \
  -DarchetypeArtifactId=terasoluna-gfw-multi-web-blank-jpa-archetype \
  -DarchetypeVersion=${ARCHETYPE_VERSION} \
