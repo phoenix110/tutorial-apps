@@ -5,7 +5,6 @@ import java.util.List;
 import javax.inject.Inject;
 
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import org.terasoluna.gfw.common.date.ClassicDateFactory;
 import org.terasoluna.securelogin.domain.model.FailedAuthentication;
@@ -45,7 +44,6 @@ public class AuthenticationEventSharedServiceImpl implements
 		return failedAuthenticationRepository.findLatest(username, count);
 	}
 
-	@Transactional(propagation = Propagation.REQUIRES_NEW)
 	@Override
 	public void authenticationSuccess(String username) {
 		SuccessfulAuthentication successEvent = new SuccessfulAuthentication();
@@ -56,7 +54,6 @@ public class AuthenticationEventSharedServiceImpl implements
 		deleteFailureEventByUsername(username);
 	}
 
-	@Transactional(propagation = Propagation.REQUIRES_NEW)
 	@Override
 	public void authenticationFailure(String username) {
 		if(accountSharedService.exists(username)){
