@@ -14,7 +14,8 @@ __END_DEPENDENCIES_LINE__i\
 \
         <dependency>\
             <groupId>org.terasoluna.gfw</groupId>\
-            <artifactId>terasoluna-gfw-web</artifactId>\
+            <artifactId>terasoluna-gfw-web-dependencies</artifactId>\
+            <type>pom</type>\
             <scope>test</scope>\
             <exclusions>\
                 <exclusion>\
